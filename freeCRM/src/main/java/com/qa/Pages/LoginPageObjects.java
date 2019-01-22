@@ -40,5 +40,8 @@ public class LoginPageObjects extends TestBase{
 		loginButton.click();
 		//This will call the constructor of HomePage and it will initialize all the properties of homePage
 		return new HomePageObjects();
+		
+		
+		//just a comment
 	}
 }
