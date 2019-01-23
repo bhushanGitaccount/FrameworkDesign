@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-23T07:28:11Z" name="Suite" finished-at="2019-01-23T07:28:32Z" duration-ms="21542">
+  <suite started-at="2019-01-23T09:23:04Z" name="Suite" finished-at="2019-01-23T09:23:28Z" duration-ms="23580">
     <groups>
     </groups>
-    <test started-at="2019-01-23T07:28:11Z" name="Test2" finished-at="2019-01-23T07:28:26Z" duration-ms="15616">
+    <test started-at="2019-01-23T09:23:04Z" name="Test2" finished-at="2019-01-23T09:23:25Z" duration-ms="20630">
       <class name="com.qa.Tests.LoginTests">
-        <test-method is-config="true" signature="initReports()[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:10Z" name="initReports" finished-at="2019-01-23T07:28:11Z" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="initReports()[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:04Z" name="initReports" finished-at="2019-01-23T09:23:04Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReports -->
-        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:11Z" name="initBrowser" finished-at="2019-01-23T07:28:26Z" duration-ms="14984" status="PASS">
+        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:04Z" name="initBrowser" finished-at="2019-01-23T09:23:23Z" duration-ms="19183" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:26Z" name="setUp" finished-at="2019-01-23T07:28:26Z" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:23Z" name="setUp" finished-at="2019-01-23T09:23:23Z" duration-ms="28" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:26Z" name="verifyLoginPageTitile" finished-at="2019-01-23T07:28:26Z" duration-ms="16" status="FAIL">
+        <test-method signature="verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:24Z" name="verifyLoginPageTitile" finished-at="2019-01-23T09:23:24Z" duration-ms="118" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -65,11 +65,11 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:26Z" name="tearDown" finished-at="2019-01-23T07:28:26Z" duration-ms="462" status="FAIL">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:24Z" name="tearDown" finished-at="2019-01-23T09:23:25Z" duration-ms="1098" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@dc9876b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -106,15 +106,15 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearReports()[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a]" started-at="2019-01-23T07:28:32Z" name="tearReports" finished-at="2019-01-23T07:28:32Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearReports()[pri:0, instance:com.qa.Tests.LoginTests@dc9876b]" started-at="2019-01-23T09:23:28Z" name="tearReports" finished-at="2019-01-23T09:23:28Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearReports -->
       </class> <!-- com.qa.Tests.LoginTests -->
     </test> <!-- Test2 -->
-    <test started-at="2019-01-23T07:28:11Z" name="Test1" finished-at="2019-01-23T07:28:32Z" duration-ms="21542">
+    <test started-at="2019-01-23T09:23:04Z" name="Test1" finished-at="2019-01-23T09:23:28Z" duration-ms="23580">
       <class name="com.qa.Tests.LoginTests">
-        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e]" started-at="2019-01-23T07:28:11Z" name="initBrowser" finished-at="2019-01-23T07:28:32Z" duration-ms="21388" status="PASS">
+        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@1f760b47]" started-at="2019-01-23T09:23:04Z" name="initBrowser" finished-at="2019-01-23T09:23:28Z" duration-ms="23436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +125,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e]" started-at="2019-01-23T07:28:32Z" name="setUp" finished-at="2019-01-23T07:28:32Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.Tests.LoginTests@1f760b47]" started-at="2019-01-23T09:23:28Z" name="setUp" finished-at="2019-01-23T09:23:28Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e]" started-at="2019-01-23T07:28:32Z" name="verifyLoginPageTitile" finished-at="2019-01-23T07:28:32Z" duration-ms="4" status="FAIL">
+        <test-method signature="verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@1f760b47]" started-at="2019-01-23T09:23:28Z" name="verifyLoginPageTitile" finished-at="2019-01-23T09:23:28Z" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -168,11 +168,11 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e]" started-at="2019-01-23T07:28:32Z" name="tearDown" finished-at="2019-01-23T07:28:32Z" duration-ms="121" status="FAIL">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qa.Tests.LoginTests@1f760b47]" started-at="2019-01-23T09:23:28Z" name="tearDown" finished-at="2019-01-23T09:23:28Z" duration-ms="67" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@1f760b47] output={null}]]]>
               </value>
             </param>
           </params>
