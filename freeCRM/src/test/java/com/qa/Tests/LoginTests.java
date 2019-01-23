@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -22,8 +23,11 @@ public class LoginTests extends TestBase {
 	LoginPageObjects loginpageobjects;
 	HomePageObjects homepageobjects;
 
-//	public LoginTests() {
-//		super();
+//public LoginTests() 
+//{
+//	super();
+//	
+//	System.out.println("LoginTest method");
 //
 //	}
 
@@ -32,9 +36,10 @@ public class LoginTests extends TestBase {
 		extent = setReports();
 	}
 
+	@Parameters({ "browser" })
 	@BeforeMethod
-	public void setUp() {
-		initBrowser();
+	public void setUp(String browser) {
+		//initBrowser(browser);
 		loginpageobjects = new LoginPageObjects();
 
 	}
@@ -42,16 +47,23 @@ public class LoginTests extends TestBase {
 	@Test()
 	public void verifyLoginPageTitile() {
 		String title = loginpageobjects.validateLoginPageTitile();
+		System.out.println("Test 1");
+
 		test = extent.createTest("Verify Title of login page");
-		
-		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
+
+		// Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and
+		// service");
 	}
 
-	@Test()
-	public void login() throws Exception {
-		test = extent.createTest("Check login functionality with correct UN and PW");
-		homepageobjects = loginpageobjects.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
+	/*
+	 * @Test() public void login() throws Exception { test =
+	 * extent.createTest("Check login functionality with correct UN and PW");
+	 * System.out.println("Test 2");
+	 * 
+	 * 
+	 * homepageobjects = loginpageobjects.login(prop.getProperty("username"),
+	 * prop.getProperty("password")); }
+	 */
 
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {

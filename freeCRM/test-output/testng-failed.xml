@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.Tests.HomeTests">
+      <class name="com.qa.Tests.LoginTests">
         <methods>
-          <include name="initReports"/>
-          <include name="verifyUsernameAfterLogin"/>
-          <include name="tearDown"/>
-          <include name="tearReports"/>
           <include name="setUp"/>
+          <include name="verifyLoginPageTitile"/>
+          <include name="tearReports"/>
+          <include name="tearDown"/>
+          <include name="initReports"/>
+          <include name="initBrowser"/>
         </methods>
-      </class> <!-- com.qa.Tests.HomeTests -->
+      </class> <!-- com.qa.Tests.LoginTests -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.Tests.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoginPageTitile"/>
+          <include name="tearReports"/>
+          <include name="tearDown"/>
+          <include name="initReports"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- com.qa.Tests.LoginTests -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

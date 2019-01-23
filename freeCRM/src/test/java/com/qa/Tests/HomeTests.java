@@ -32,8 +32,8 @@ public class HomeTests extends TestBase {
 	}
 
 	@BeforeMethod
-	public void setUp() throws Exception {
-		initBrowser();
+	public void setUp(String browser) throws Exception {
+		//initBrowser(browser);
 		login = new LoginPageObjects();
 		hpo = login.login(prop.getProperty("username"), prop.getProperty("password"));
 	}

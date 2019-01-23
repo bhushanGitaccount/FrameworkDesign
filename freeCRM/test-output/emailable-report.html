@@ -9,15 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">100,063</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test2</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,616</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,542</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">37,158</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.Tests.HomeTests</td><td><a href="#m0">verifyUsernameAfterLogin</a></td><td rowspan="1">1548136861956</td><td rowspan="1">245</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.Tests.HomeTests</td><td><a href="#m1">verifyHomePageTitle</a></td><td rowspan="1">1548136835420</td><td rowspan="1">134</td></tr><tr class="passedodd"><td rowspan="2">com.qa.Tests.LoginTests</td><td><a href="#m2">login</a></td><td rowspan="1">1548136780503</td><td rowspan="1">11266</td></tr><tr class="passedodd"><td><a href="#m3">verifyLoginPageTitile</a></td><td rowspan="1">1548136808591</td><td rowspan="1">25</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.Tests.LoginTests</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1548228506168</td><td rowspan="1">462</td></tr><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.Tests.LoginTests</td><td><a href="#m1">verifyLoginPageTitile</a></td><td rowspan="1">1548228506128</td><td rowspan="1">16</td></tr><tr><th colspan="4">Test2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.Tests.LoginTests</td><td><a href="#m2">tearReports</a></td><td rowspan="1">1548228512659</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.Tests.LoginTests</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1548228512446</td><td rowspan="1">121</td></tr><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.Tests.LoginTests</td><td><a href="#m4">verifyLoginPageTitile</a></td><td rowspan="1">1548228512436</td><td rowspan="1">4</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.qa.Tests.HomeTests#verifyUsernameAfterLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: AssertFailed because username after login does not match. expected [  User:Test QA] but found [  User: Test QA]
-	at com.qa.Tests.HomeTests.verifyUsernameAfterLogin(HomeTests.java:46)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.Tests.HomeTests#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.Tests.LoginTests#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.Tests.LoginTests#verifyLoginPageTitile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m0">com.qa.Tests.LoginTests#tearDown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@36b4fe2a] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qa.Tests.LoginTests.tearDown(LoginTests.java:73)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.Tests.LoginTests#verifyLoginPageTitile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qa.Pages.LoginPageObjects.validateLoginPageTitile(LoginPageObjects.java:27)
+	at com.qa.Tests.LoginTests.verifyLoginPageTitile(LoginTests.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.Tests.LoginTests#tearReports</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m3">com.qa.Tests.LoginTests#tearDown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyLoginPageTitile status=FAILURE method=LoginTests.verifyLoginPageTitile()[pri:0, instance:com.qa.Tests.LoginTests@6a2b953e] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qa.Tests.LoginTests.tearDown(LoginTests.java:73)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.Tests.LoginTests#verifyLoginPageTitile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.qa.Pages.LoginPageObjects.validateLoginPageTitile(LoginPageObjects.java:27)
+	at com.qa.Tests.LoginTests.verifyLoginPageTitile(LoginTests.java:49)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
